@@ -21,6 +21,11 @@ public class Application {
         return "test new API";
     }
 
+    @RequestMapping("/test222")
+    public String test222() {
+        return "test new API222";
+    }
+
     @RequestMapping("/name/{name}")
     public String getName(@PathVariable("name") String name) {
         return this.myName + " - your name" + name;
